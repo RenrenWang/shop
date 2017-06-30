@@ -55,12 +55,12 @@ export default class ProductDetail extends React.Component {
                      >
                         <Image source={require('../images/arrow.png')} style={{height:22,width:22,tintColor:"#fff"}}/>
                   </TouchableOpacity>
-                   <TouchableOpacity 
+                   {/*<TouchableOpacity 
                    onPress={()=>this.props.navBarLeftAction()}
                    style={{height:36,width:36,backgroundColor:"rgba(0,0,0,.5)",borderRadius:18,alignItems:'center',justifyContent:'center'}}
                     >
                         <Image source={require('../images/more.png')} style={{height:22,width:22,tintColor:"#fff"}}/>
-                  </TouchableOpacity>
+                  </TouchableOpacity>*/}
               </View>
              <ScrollView> 
                 <Swiper
@@ -99,7 +99,7 @@ export default class ProductDetail extends React.Component {
                 <View style={{flexDirection:"column",backgroundColor:'#fff',padding:5}}>
                     <View style={{flexDirection:'row'}}>
                          <Text style={{flex:1,fontSize:16,paddingVertical:5}}>{this.state.data.prdName}</Text>
-                         <Image resizeMode="stretch" style={{marginRight:5,height:28,width:28}} source={require('../images/share.png')} />
+                         {/*<Image resizeMode="stretch" style={{marginRight:5,height:28,width:28}} source={require('../images/share.png')} />*/}
                     </View>
                     <Text style={{color:"crimson",fontSize:18}}>￥{this.state.data.prdZkprice}</Text>
                     <Text style={{color:"gainsboro",fontSize:14,textDecorationLine:'line-through'}}>原价￥{this.state.data.prdOldprice}</Text>

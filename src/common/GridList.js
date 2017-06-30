@@ -31,7 +31,7 @@ export default class GridList extends React.Component {
 
   'trailing': false
 })}>
-          <Image resizeMode="contain" source={imgList[i]['imgUrl']} key={i} style={styles.gridItemImg} />
+          <Image  source={imgList[i]['imgUrl']} key={i} style={styles.gridItemImg} />
           {
            (imgList[i]['name']&&this.props.showText)? <Text style={styles.gridItemText}>{imgList[i]['name']}</Text> : null
           }
@@ -58,20 +58,22 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   gridItem: {
+  
     width: width / 5,
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'column',
+    paddingVertical:3,
 
   },
   gridItemImg: {
-
-    width: width / 6,
-    height: width / 6,
+    
+    width: 45,
+    height:45,
 
   },
   gridItemText: {
-    paddingBottom: 4,
+   
     fontSize: 12,
     color: '#6b6b6b',
     backgroundColor: 'transparent',

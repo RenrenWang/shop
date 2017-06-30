@@ -71,11 +71,11 @@ const TabScreen = TabNavigator({
     tabBarComponent: TabBarBottom,
     tabBarPosition: 'bottom',
 
-    lazy: true,
-    // initialRouteName: "Home",
-    swipeEnabled: false,
-  
-    animationEnabled: false,
+      lazy: true,
+        // initialRouteName: "Home",
+        swipeEnabled: true,
+
+        animationEnabled: false,
     tabBarOptions: {
 
 

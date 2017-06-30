@@ -42,11 +42,11 @@ let kindList = [
 
 ];
 let storeList = [
-  { id: 1, imgUrl: require('../images/kind_1.png') },
-  { id: 2, imgUrl: require('../images/kind_2.png') },
-  { id: 3, imgUrl: require('../images/kind_3.png') },
-  { id: 4, imgUrl: require('../images/kind_4.png') },
-  { id: 5, imgUrl: require('../images/kind_5.png') },
+  { id: 1, imgUrl: require('../images/shop_1.png') },
+  { id: 2, imgUrl: require('../images/shop_2.png') },
+  { id: 3, imgUrl: require('../images/shop_3.png') },
+  { id: 4, imgUrl: require('../images/shop_4.png') },
+  { id: 5, imgUrl: require('../images/shop_5.png') },
 
 
 ];
@@ -113,8 +113,9 @@ export default class Home extends React.PureComponent {
           height={200}
           loop={true}
           swipeEnabled={true}
-          activeDotColor="#e64275"
+      
           removeClippedSubviews={false}
+              activeDotColor="#e64275"
           dotColor="rgba(255,255,255,0.3)"
 
           paginationStyle={{

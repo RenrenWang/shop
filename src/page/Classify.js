@@ -75,14 +75,22 @@ export default class Classify extends React.Component {
        
         return (
             <View style={styles.container}>
+    <NavBar
+          navigation={this.props.navigation}
+          navBarLeftAction={() => goBack()}
+          navBarRight={() => <Image
+            style={{ tintColor: "#fff", width: 28, height: 28 }}
+            source={require('../images/home.png')}
+          />}
 
-                <NavBar
+        />
+                {/*<NavBar
                     title={state.params.name}
                     navBarLeftAction={() =>goBack()}
                     navBarRight={() => this._navBarRight()}
 
 
-                />
+                />*/}
                 {this.renderFilters(filters)}
                 <MyListView
                     removeClippedSubviews={false}
