@@ -10,7 +10,7 @@ import {
    StatusBar,
    Platform
 } from 'react-native';
-const STATUS_BAR_HEIGHT=30;
+const STATUS_BAR_HEIGHT=40;
 export default class Navbar extends Component {
   constructor(props) {
     super(props);

@@ -127,9 +127,9 @@ componentWillUnmount(){
             <RefreshControl
               refreshing={this.state.isRefreshing}
               onRefresh={this._onRefresh.bind(this)}
-              tintColor="#ff0000"
+                tintColor="#999"
               title="Loading..."
-              titleColor="#00ff00"
+              titleColor="#999"
               colors={['#e64275']}
               progressBackgroundColor="#fff"
             />}

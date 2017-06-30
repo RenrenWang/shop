@@ -36,7 +36,7 @@ export default class My extends React.Component {
     return (
      <View style={styles.container}>
              <View style={{paddingHorizontal:15,height:180,flexDirection:"row", backgroundColor:"#e64275",alignItems:"center"}}>
-                     <Image style={{height:80,width:80,borderRadius:40}} source={{uri:'http://q1.qlogo.cn/g?b=qq&k=nbAhM5OrTCMqZ1icAJsV8Ww&s=140&t=1483369313'}}/>
+                     <Image style={{height:80,width:80,borderRadius:40,tintColor:'#fff'}}  source={require('../images/tab_my.png')}/>
                      <Text style={{marginLeft:15,fontSize:18,color:"#fff"}}>用户名</Text>
              </View>
              <View style={{marginTop:10,flexDirection:"column"}}>
